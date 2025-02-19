@@ -24,7 +24,9 @@ export default function TaskForm() {
     }
 
     useEffect(() => {
-        alert(formState.message)
+        if(formState.message) {
+            alert(formState.message)
+        }
     }, [formState.message])
 
     return (
