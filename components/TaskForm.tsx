@@ -27,14 +27,6 @@ export default function TaskForm() {
         alert(formState.message)
     }, [formState.message])
 
-    const handleSubmit = (e: any) => {
-        e.preventDefault();
-        const formData = new FormData(e.target);
-        const jsonData = Object.fromEntries(formData.entries());
-
-        console.log(jsonData); // Logs JSON string to console
-    };
-
     return (
         <form action={formAction} className="space-y-6">
             <div>
